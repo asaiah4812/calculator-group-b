@@ -1,0 +1,141 @@
+:root{
+    --shadow: -8px -8px 15px rgba(255,255,255, 0.1), 5px 5px 15px rgba(0, 0 , 0 , 0.2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Clash Display', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh
+    
+}
+
+
+
+section{
+    background:gray;
+    width: 25rem;
+    height: 50rem;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.android{
+    position: absolute;
+    background: gray;
+    top: 1%;
+    right: 37%;
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.android div{
+    width:16px;
+    height: 16px;
+    background: rgba(13, 13, 14, 0.89);
+    border-radius: 50%;
+}
+
+.input{
+    width: 80%;
+    box-shadow: var(--shadow);
+    display: flex;
+    border: 1px solid #2b2a2a;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.input input{
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border:none;
+    background: transparent;
+    color: white;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: right;
+}
+
+@media(max-width:320px){
+   .grid div input{
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--shadow);
+}
+   .grid{
+    gap: 5px;
+   }
+}
+
+.grid{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.grid div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid div input{
+    border-radius: 10px;
+    border: none;
+    background: #363636;
+    color: white;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    box-shadow: var(--shadow);
+}
+
+.grid div input:hover{
+    background: #5f5f5f;
+}
+
+.grid div input:active{
+    background: #707070;
+}
+
+
+
+
+
+#operators{
+    color: rgb(101, 194, 194);
+}
+
+#operators:hover{
+    color: rgb(60, 185, 185);
+
+}
