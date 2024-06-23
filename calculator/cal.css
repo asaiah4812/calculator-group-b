@@ -139,3 +139,16 @@ section{
     color: rgb(60, 185, 185);
 
 }
+.name{
+    width: 80%;
+    position: absolute;
+    bottom: 2%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.name marquee{
+    color: white;
+    background: #181818;
+    font-size: 25px;
+}
